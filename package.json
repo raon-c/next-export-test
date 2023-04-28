@@ -4,9 +4,10 @@
   "private": true,
   "scripts": {
     "dev": "next dev",
-    "build": "next build",
-    "start": "next start",
-    "lint": "next lint"
+    "build": "next build && next export",
+    "lint": "next lint",
+    "start": "serve out",
+    "start-custom": "serve out -c ../serve.json"
   },
   "dependencies": {
     "@types/node": "18.16.1",
@@ -19,6 +20,7 @@
     "postcss": "8.4.23",
     "react": "18.2.0",
     "react-dom": "18.2.0",
+    "serve": "14.2.0",
     "tailwindcss": "3.3.2",
     "typescript": "5.0.4"
   }

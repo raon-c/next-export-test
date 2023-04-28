@@ -1,0 +1,6 @@
+{
+  "rewrites": [
+    { "source": "/:id", "destination": "/[id].html" },
+    { "source": "/:id/comment", "destination": "/[id]/comment.html" }
+  ]
+}
